@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Demo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>HelloStatusServlet</servlet-name>
+        <servlet-class>com.test.tweet.HelloStatusServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HelloTweetServlet</servlet-name>
+        <servlet-class>com.test.tweet.HelloTweetServlet</servlet-class>
+    </servlet>
+
+    
+   <servlet-mapping>
+        <servlet-name>HelloStatusServlet</servlet-name>
+        <url-pattern>/HelloStatusServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HelloTweetServlet</servlet-name>
+        <url-pattern>/HelloTweetServlet</url-pattern>
+    </servlet-mapping>
+   
+</web-app>
